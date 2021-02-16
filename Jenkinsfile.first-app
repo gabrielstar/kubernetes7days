@@ -13,7 +13,7 @@ podTemplate(label: label,
     ),
     containerTemplate(
       name: 'helm', 
-      image: 'lachlanevenson/k8s-helm:v2.8.1', 
+      image: 'lachlanevenson/k8s-helm:v3.5.0',
       ttyEnabled: true, 
       command: 'cat'
     )
