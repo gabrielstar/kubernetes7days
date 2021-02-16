@@ -9,5 +9,5 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 subjects:
   - kind: ServiceAccount
-    name: default
-    namespace: kube-system;p.
+    name: jenkins
+    namespace: kube-system
