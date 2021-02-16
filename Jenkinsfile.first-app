@@ -64,7 +64,8 @@ podTemplate(label: label,
           dir('charts') {
             withEnv(['VERSION=' + env.version.trim(), 'COMMIT=' + env.commit.trim()]) {
               sh """
-                helm upgrade --install first-app \
+              ls
+                helm upgrade --install first-app ./first-app \
                   --namespace production \
                   --set image.repository=gabrielstar/first-app \
                   --set image.tag=${VERSION}.${COMMIT} \
