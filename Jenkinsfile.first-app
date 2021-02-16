@@ -68,6 +68,7 @@ podTemplate(label: label,
                   --namespace production \
                   --set image.repository=gabrielstar/first-app \
                   --set image.tag=${VERSION}.${COMMIT} \
+                  --create-namespace
                   first-app
               """
             }
